@@ -1,0 +1,234 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1664c1;
+    color: white;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: px 20px;
+    background: black;
+  }
+  
+  .navbar .profile {
+    display: flex;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .navbar .profile img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .navbar nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .navbar nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .hire-me {
+    background: #1a73e8;
+    margin-right: 20px;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .hire-me:hover {
+    background: #1664c1;
+  }
+  .cmd-window {
+    margin-top: 40px;
+    margin-left: 40px;
+    max-width: 450px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: #000; /* Black CMD window */
+    border: 2px solid #333;
+    box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.5);
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  .cmd-line {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(40, end), blink 0.7s step-end infinite;
+  }
+
+  .line-6 { animation-delay: 0s; }
+  .line-7 { animation-delay: 1s; }
+  .line-8 { animation-delay: 2s; }
+  .line-9 { animation-delay: 4s; }
+  .line-10 { animation-delay: 6s; }
+
+  .hero .console2 {
+    margin-left: 1050px;
+    margin-top: -180px;
+    padding-bottom: 40px;
+  }
+
+  .cmd-window2 {
+    margin-top: 40px;
+    margin-left: 40px;
+    max-width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: #000; /* Black CMD window */
+    border: 2px solid #333;
+    box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.5);
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  .cmd-line2 {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(40, end), blink 0.7s step-end infinite;
+  }
+
+  .line-1 { animation-delay: 6s; }
+  .line-2 { animation-delay: 7s; }
+  .line-3 { animation-delay: 8s; }
+  .line-4 { animation-delay: 9s; }
+  .line-5 { animation-delay: 10s; }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink {
+    from {
+      border-color: transparent;
+    }
+    to {
+      border-color: #00FF00;
+    }
+  }
+  .intro{
+    text-align: center;
+    margin-top: -180px;
+    margin-left: 230px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .highlight{
+      font-size: 64px;
+      color: #00FF00;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      text-align: center;
+  }
+  .hero .intro h1 {
+    font-size: 80px;
+    font-weight: bold;
+    margin: 10px 0px;
+  }
+  
+  .hero .intro .highlight {
+    color: #07b73c;
+  }
+  
+  .hero .buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .hero .buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .hero .buttons button:hover {
+    background: white;
+    color: black;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-section {
+    flex: 1 1 20%;
+    margin: 10px;
+  }
+  
+  .footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #f4c20d;
+  }
+  
+  .footer-section p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .social-media-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-media-icons .icon {
+    text-decoration: none;
+    color: #f4c20d;
+    font-size: 14px;
+  }
+  
+  .social-media-icons .icon:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      flex: 1 1 100%;
+      text-align: center;
+    }
+  }
+  
+
+  
